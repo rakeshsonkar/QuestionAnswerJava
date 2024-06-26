@@ -58,7 +58,10 @@ public class CollectionHiddenMethods {
 		
 		// Coolections.rotate()
 		List<String> test= new ArrayList<String>();
-
+		test.add("Test the issuse");
+		test.add("this");
+		test.add("use");
+		System.out.println(test);
 	}
 
 }

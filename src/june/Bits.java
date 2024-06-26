@@ -44,24 +44,27 @@ public class Bits {
 	// Bit Mask : 1<<i   
 	// Operation 
 		
-	// For 1 
-		Scanner sc = new Scanner(System.in);
-		int oper = sc.nextInt();
-		int m=5;
-		int po=1;	
-		//int oper=1;
-		int bitMaskU=1<<po;
-		if(oper==1) {
-			// set opreation 
-		
-			int newNumberU=bitMaskU|n;
-			System.out.println(newNumberU);
-		}else {
-			// clear 
+	try (// For 1 
+		Scanner sc = new Scanner(System.in)) {
+			int oper = sc.nextInt();
+			@SuppressWarnings("unused")
+			int m=5;
+			int po=1;	
+			//int oper=1;
+			int bitMaskU=1<<po;
+			if(oper==1) {
+				// set opreation 
 			
-			int newBitMaskU= ~(bitMaskU);
-			int newNumberU =bitMaskU & n;
-			System.out.println(newNumberU);
+				int newNumberU=bitMaskU|n;
+				System.out.println(newNumberU);
+			}else {
+				// clear 
+				
+				@SuppressWarnings("unused")
+				int newBitMaskU= ~(bitMaskU);
+				int newNumberU =bitMaskU & n;
+				System.out.println(newNumberU);
+			}
 		}
 		
 	

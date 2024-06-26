@@ -1,6 +1,8 @@
 package june;
 
+import java.util.Arrays;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
@@ -17,6 +19,11 @@ public class NonRepeatedValues {
 		Optional<Character> firstrepeatedVaule = res.entrySet().stream().filter(f->f.getValue()>1).map(Map.Entry::getKey).skip(0).findFirst();
 		firstrepeatedVaule.ifPresentOrElse(System.out::println, ()->System.out.println("data is not found"));
 		System.out.println();
+		
+		List<Integer> list=Arrays.asList(5,10,15,35,20);
+		 List<Integer> ls=  list.stream().filter(i-> i%2==0).toList();
+		
+		 System.out.println(ls);
 		
 	}
 
