@@ -3,6 +3,7 @@ package june.swap;
 import java.util.stream.IntStream;
 
 public class PrimeNumber {
+@SuppressWarnings("unused")
 public static void main(String[] args) {
 	int num=6;
 	int count=0;

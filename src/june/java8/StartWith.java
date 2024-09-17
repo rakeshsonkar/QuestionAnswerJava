@@ -15,6 +15,7 @@ public class StartWith {
 		Arrays.stream(numbers).boxed().map(d->d+"").filter(d->d.startsWith("2")).collect(Collectors.toList()).forEach(System.out::println);
 		
 		String[] names= {"sumit","karan","GainJavaKnowlage","Vivek","Monty"};
+		@SuppressWarnings("unused")
 		String longetsString= Arrays.stream(names).max(Comparator.comparingInt(String::length)).get();
 		String longetsStrings=Arrays.stream(names).reduce((x, y)->x.length()>y.length()?x:y).get();
 		System.out.println("langet  "+longetsStrings);

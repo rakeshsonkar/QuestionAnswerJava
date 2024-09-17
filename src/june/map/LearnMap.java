@@ -1,6 +1,5 @@
 package june.map;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -13,7 +12,7 @@ public class LearnMap {
 		// In Java, elements of Map are stored in Key/Value pairs. Keys are unique values associated with individual Values
 		// A map cannot contain duplicate keys. And ,Each key is associated with a single value.
 		
-		ArrayList<Integer> ls= new ArrayList<>();
+		//ArrayList<Integer> ls= new ArrayList<>();
 		
 		Map<String, String> map= new HashMap<String, String>();
 		

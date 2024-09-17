@@ -7,6 +7,7 @@ public class PalindromeNumber {
 	public static void main(String[] args) {
 		// A palindrome number is a number that remains the same when its digits are reversed.Like 16461
 		
+		@SuppressWarnings("resource")
 		Scanner sc= new Scanner(System.in);
 		int num=sc.nextInt();
 		int org_num=num;

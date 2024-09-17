@@ -11,6 +11,7 @@ import java.util.Vector;
 
 public class ArrayListExample {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		ArrayList l = new ArrayList();
 		l.add("a");
